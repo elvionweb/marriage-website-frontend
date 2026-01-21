@@ -36,7 +36,7 @@ export default function Footer({
             alt="Elvionweb Logo"
             className="w-8 h-8 object-contain"
           />
-          Built with love by{" "}
+          Built by{" "}
           <a
             href="https://www.elvionweb.com"
             target="_blank"
