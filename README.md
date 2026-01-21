@@ -1,4 +1,4 @@
-# 💍 Wedding Invitation & RSVP Website (Frontend)
+# 💍 Wedding Invitation and RSVP Website (Frontend)
 
 A modern, elegant wedding website built with **React**, **Vite**, **Tailwind CSS**, and **Framer Motion**.  
 It allows guests to view wedding details, submit RSVPs, leave love notes, and enjoy a smooth, responsive experience across all devices.
