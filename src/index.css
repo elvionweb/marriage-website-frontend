@@ -1,0 +1,90 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+/* Tailwind v4 entry */
+@import "tailwindcss";
+
+/* =========================
+   THEME VARIABLES (v4)
+   ========================= */
+@theme {
+  /* Fonts */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Playfair Display', ui-serif, Georgia, serif;
+
+  /* Colors */
+  --primary: #FDECEC;
+  --secondary: #BFA6A0;
+  --accent: #D4AF37;
+}
+
+/* =========================
+   CUSTOM UTILITIES
+   ========================= */
+@layer utilities {
+  /* Background colors */
+  .bg-primary {
+    background-color: var(--primary);
+  }
+
+  .bg-secondary {
+    background-color: var(--secondary);
+  }
+
+  .bg-accent {
+    background-color: var(--accent);
+  }
+
+  /* Text colors */
+  .text-primary {
+    color: var(--primary);
+  }
+
+  .text-secondary {
+    color: var(--secondary);
+  }
+
+  .text-accent {
+    color: var(--accent);
+  }
+
+  /* Borders & rings */
+  .border-secondary {
+    border-color: var(--secondary);
+  }
+
+  .ring-accent {
+    --tw-ring-color: var(--accent);
+  }
+
+  /* Fonts */
+  .font-sans {
+    font-family: var(--font-sans);
+  }
+
+  .font-serif {
+    font-family: var(--font-serif);
+  }
+}
+
+/* =========================
+   GLOBAL STYLES
+   ========================= */
+body {
+  font-family: var(--font-sans);
+  background-color: white;
+  color: #1f2937;
+}
+
+/* =========================
+   REUSABLE COMPONENTS
+   ========================= */
+@layer components {
+  .input {
+    @apply w-full p-3 rounded-lg border focus:outline-none focus:ring-2;
+    border-color: var(--secondary);
+    --tw-ring-color: var(--accent);
+  }
+}
+
+
