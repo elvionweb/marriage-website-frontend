@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import background from "../assets/Background.jpeg";
+import Background from "../assets/Background.jpeg";
 
 export default function Hero() {
   return (
@@ -7,7 +7,7 @@ export default function Hero() {
       <section
         className="relative flex flex-col justify-center items-center h-screen w-full bg-center md:min-h-[220vh]"
         style={{
-          backgroundImage: `url(${background})`, // Correctly reference imported image
+          backgroundImage: `url(${Background})`, // Correctly reference imported image
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
