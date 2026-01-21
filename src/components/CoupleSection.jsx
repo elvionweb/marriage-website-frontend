@@ -1,6 +1,6 @@
 export default function CoupleSection() {
   return (
-    <section className="pt-10 md:pt-18 px-4 pb-4 md:pb-14 md:px-24 flex flex-col md:flex-row justify-center items-center gap-12">
+    <section className="pt-8 md:pt-18 px-4 pb-4 md:pb-14 md:px-24 flex flex-col md:flex-row justify-center items-center gap-7 md:gap-12">
       <div className="flex-1 text-center">
         <img
           src="/bride.jpeg"

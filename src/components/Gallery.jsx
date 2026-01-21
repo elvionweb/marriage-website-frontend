@@ -11,7 +11,7 @@ const images = [
 
 export default function Gallery() {
   return (
-    <section className="pt-4 md:pt-10 bg-primary">
+    <section className="pt-4 md:pt-10 pb-4 md:pb-6 bg-primary">
       <h2 className="text-3xl md:text-4xl font-serif text-center text-blue-600 mb-4 md:mb-10">
         Our Memories
       </h2>

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 // import axios from "axios";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import api from "../lib/api"
 
 
@@ -41,10 +41,23 @@ export default function RSVPForm() {
     register,
     handleSubmit,
     reset,
+    clearErrors,
     formState: { errors },
   } = useForm({
     resolver: zodResolver(RSVP_SCHEMA),
   });
+
+
+   useEffect(() => {
+    if (Object.keys(errors).length > 0) {
+      const timer = setTimeout(() => {
+        clearErrors();
+      }, 3000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [errors, clearErrors]);
+  
 
   // ============================
   // Submit function
@@ -72,7 +85,7 @@ export default function RSVPForm() {
 
   return (
     <section className="pt-10 md:pt-16 pb-20 bg-white">
-      <h2 className="text-3xl md:text-4xl font-serif text-blue-600 text-center mb-6">
+      <h2 className="text-3xl md:text-4xl font-serif text-blue-600 text-center mb-3 md:mb-6">
         RSVP
       </h2>
 

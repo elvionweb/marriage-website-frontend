@@ -5,10 +5,10 @@ export default function Countdown() {
   const { timeLeft, isComplete } = useCountdown("2026-02-21T00:00:00");
 
   return (
-    <section className="pt-7 md:pt-18 mb-9 md:mb-18 bg-white text-center px-4">
+    <section className="pt-7 md:pt-18 mb-7 md:mb-18 bg-white text-center px-4">
       {!isComplete && timeLeft && (
         <>
-          <h2 className="text-3xl md:text-4xl text-blue-600 font-serif mb-8">
+          <h2 className="text-3xl md:text-4xl text-blue-600 font-serif mb-6 md:mb-8">
             Counting Down to Forever
           </h2>
 

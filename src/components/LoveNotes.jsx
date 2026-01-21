@@ -31,10 +31,16 @@ export default function LoveNotes() {
     // Frontend validation
     if (!message.trim()) {
       setError("Message is required.");
+
+       // ✅ Auto-hide error after 3 seconds
+    setTimeout(() => setError(""), 3000);
       return;
     }
     if (message.length > 350) {
       setError("Message cannot exceed 350 characters.");
+
+      // ✅ Auto-hide error after 3 seconds
+    setTimeout(() => setError(""), 3000);
       return;
     }
 
