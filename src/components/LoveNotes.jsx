@@ -72,7 +72,7 @@ export default function LoveNotes() {
 
   return (
     <section className="py-6 bg-primary text-center px-4">
-      <h2 className="text-2xl md:text-4xl font-serif text-blue-600 mb-6">
+      <h2 className="text-2xl md:text-4xl font-serif text-blue-600 mb-3 md:mb-6">
         Leave a Note
       </h2>
 
