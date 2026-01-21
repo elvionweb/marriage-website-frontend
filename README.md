@@ -55,9 +55,9 @@ src/
 ```
 Author
 
-Elvis Ibhafidon
+Elvionweb
 
-Founder and Full Stack Developer — Elvionweb
+Ibhafidon Elvis Founder — Elvionweb
 
 🌐 Brand: Elvionweb
 
